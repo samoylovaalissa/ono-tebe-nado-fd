@@ -6,18 +6,23 @@ header {
     margin-bottom: 84px;
     margin-right: 50px;
     padding: 11px 0px 10px 6px;
+    box-sizing: border-box;
+    line-height: normal;
     
 }
 
 
 nav {
+    box-sizing: border-box;
    grid-column: 1fr; 
    margin: 0;
    padding: 0px 0px 0px 0px;
+   line-height: inherital;
 
 }
 
 .header__links-list {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     text-wrap: nowrap;
@@ -34,36 +39,40 @@ nav {
 }
 
 .header__links-list-item {
+    box-sizing: border-box;
     text-decoration: none;
-    /* border-bottom: 1px solid black; */
     margin: 24px 11px 2px 0px;
     padding: 0px 10px 1px 0px;
 }
 
-.header__links-list a {
-     text-decoration:;
+.header__links-list, a {
+     text-decoration: none;
      text-underline-offset: 3px;
 }
 
 .header__links-list-item_no-bullit {
+    box-sizing: border-box;
     list-style: none;
     margin: 0;
 }
 
 .header__logo-image {
-    width: 148px;
-    height: 105px;
+    box-sizing: border-box;
+    min-width: 148px;
+    min-height: 105px;
     grid-column: 2fr;
 }
 
 
 .header__address { 
+    box-sizing: border-box;
     grid-column: 3fr;
     min-height: 98px;
     margin-top: 11px;
 }
 
 .header__address__item {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
@@ -72,50 +81,56 @@ nav {
     margin-left: auto;
     padding: 0px 20px 0px 0px;
     line-height: 0.35em;
-    
 }
 
 .header__address__link {
+    box-sizing: border-box;
     line-height: 1em;
 }
 
 main {
+    box-sizing: border-box;
     margin-bottom: 180px;
-    margin-top: 50px;
+    margin-top: 20px;
+    line-height: normal;
 }
 
 .cover {
+    box-sizing: border-box;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(/images/cover.jpg);
     background-size: cover;
     background-position: center;
-    width: 1100px;
-    height: 757px;
+    width: 100%;
+    max-height: 757px;
     color: white;
 }
 
 .cover__title {
+    box-sizing: border-box;
     font-size: 100px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.3em;
     line-height: 1em;
-    padding: 150px 0 0 25px;
-    margin: 0;
+    padding: 164px 0 0 25px;
+    
 
 }
 
 .it {
+    box-sizing: border-box;
     text-align: left;
-    margin: 0;
+    margin: 0px 0 0 25px;
     padding-bottom: 10px;
 }
 
 
 .you {
+    box-sizing: border-box;
     text-align: center;
-    margin: 0;
+    margin: 25px 20px 0 0;
     padding-bottom: 10px;
     padding-left: 28px;
     
@@ -123,13 +138,16 @@ main {
 
 
 .need { 
+    box-sizing: border-box;
     text-align: right;
-    margin: 0;
+    margin: 25px 0 0 0;
     padding-right: 20px;
+    padding-bottom: 23px;
 }
 
 
 .cover__description-text {
+    box-sizing: border-box;
     display: inline-block;
     font-size: 22px;
     text-transform: uppercase;
@@ -141,11 +159,13 @@ main {
 
 
 .letter-spacing-extended {
+    box-sizing: border-box;
     word-spacing: 0.75em;
 }
 
 
 .bet-button {
+    box-sizing: border-box;
     display: inline-block;
     border: 1px solid white;
     font-size: 22px;
@@ -158,31 +178,36 @@ main {
 
 
 .lots {
+    box-sizing: border-box;
     margin: auto;
     
 }
 
 .lots__heading {
+    box-sizing: border-box;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 180px 891px 0px 64px;
+    margin: 170px 891px 0px 64px;
     padding: 0;
 }
 
 .cards {
+    box-sizing: border-box;
     display:flex;
-    width: 1052px;
-    height: 596px;
+    min-width: 1052px;
+    min-height: 596px;
     gap: 25px;
     margin: auto;
-    margin-bottom: 57px;
+    margin-bottom: 30px;
+    margin-left: 25px;
     padding: 0;
     color: white;
 
 }
 
 .card-title { 
+    box-sizing: border-box;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: bold;
@@ -191,77 +216,83 @@ main {
 }
 
 .card__text {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 27px;
 }
 
+.card_type {
+    box-sizing: border-box;
+    max-width: 334px;
+    min-height: 596px;
+    background-size: cover;
+    background-position: center;
+   
+}
 
 
 .card_type_film {
+    box-sizing: border-box;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/card-lot-01.jpg);
     box-shadow: 0 2px 10px black;
-    width: 334px;
-    height: 596px;
-    background-size: cover;
-    background-position: center;
     background-color: rgb(0 0 0 / 0.6);
 }
 
 
 .card_type_book {
+    box-sizing: border-box;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/card-lot-02.jpg);
-    width: 334px;
-    height: 596px;
-    background-size: cover;
-    background-position: center;
+    
     
 }
 
 
 .card_type_picture {
+    box-sizing: border-box;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/card-lot-03.jpg);
-    width: 334px;
-    height: 596px;
-    background-size: cover;
-    background-position: center;
+    
 }
 
 article {
+    box-sizing: border-box;
     font-size: 20px;
-    margin: 0px 15px 23px 16px;
+    padding: 0px 15px 23px 16px;
 }
 
 
 .more {
-   font-size: 20px; 
-   padding: 0;
-   margin: 0px 0px 0px 65px;
-   text-decoration: none;
-   border-bottom: 1px solid black;   
+    box-sizing: border-box;
+    font-size: 20px; 
+    padding: 0;
+    margin: 0px 0px 0px 65px;
+    text-decoration: none;
+    border-bottom: 1px solid black;   
 }
 
 .about {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-size: 20px;
-    margin: 118px 0px 0px 0px;
+    padding: 118px 0px 0px 0px;
 
 }
 
 .about__logo {
+    box-sizing: border-box;
     grid-column: span 1;
     display: flex;
     background-color: black;
-    width: 240px; 
-    height: 240px; 
+    max-width: 240px; 
+    max-height: 240px; 
     border-radius: 50%;	
     margin: 35px 0px 0px 71px;
     
@@ -269,6 +300,7 @@ article {
 
 
 .logo-white {
+    box-sizing: border-box;
     width: 148px;
     height: 114px;
     margin: 64px 0px 0px 49px;
@@ -277,12 +309,13 @@ article {
 
 
 .about__column {
+    box-sizing: border-box;
     grid-column: span 2;
     padding: 125px 0px 0px 0px;
-    
 }
 
 .about__title {
+    box-sizing: border-box;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
@@ -290,6 +323,7 @@ article {
 }
 
 .about__text {
+    box-sizing: border-box;
     display:flex;
     flex-direction: column;
     gap: 24px;
@@ -302,11 +336,14 @@ article {
 
 
 footer {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    line-height: normal;
 }
 
-.footer_address {
+.footer__address {
+    box-sizing: border-box;
     grid-column: span 1fr;
     text-align: left;
     display: flex;
@@ -320,12 +357,14 @@ footer {
 }
 
 .footer__address__item {
+    box-sizing: border-box;
     padding: 0px 0px 0px 50px;
     margin: 0px;
     line-height: 24px;
 }
 
 .footer__menu {
+    box-sizing: border-box;
     grid-column: span 2fr;
     text-align: center;
     display: flex;
@@ -334,6 +373,7 @@ footer {
 }
 
 .footer__menu-list {
+    box-sizing: border-box;
     grid-column: span 3fr;
     list-style: none;
     padding: 0px;
@@ -341,6 +381,7 @@ footer {
 }
 
 .footer__links-list-item {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-size: 18px;
@@ -348,6 +389,7 @@ footer {
 }
 
 .footer__social-list {
+    box-sizing: border-box;
     list-style: none;
     display: flex;
     gap: 48px;
@@ -360,12 +402,14 @@ footer {
 }
 
 .footer__social-list-item {
+    box-sizing: border-box;
     padding: 0px;
 }
 
 .logo__social {
-    width: 48px;
-    height: 48px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    max-width: 48px;
+    max-height: 48px;
+    margin: 0;;
+    padding: 0;
 }
